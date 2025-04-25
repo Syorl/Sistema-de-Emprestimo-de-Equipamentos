@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Solicitar Empréstimo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/pags/Emprestimo.css">
+</head>
+<body>
+
+  <header class="profile-header">
+    <img src="../css/Imagens/User.png" alt="Avatar" class="avatar">
+    <div class="profile-info">
+      <p>NOME:</p>
+      <p>ACESSO: <span class="highlight">SOLICITANTE</span></p>
+    </div>
+  </header>
+
+  <main class="loan-section">
+    <h1>Solicitar Empréstimo</h1>
+    <div class="item-list">
+      <div class="item-card" onclick="openPopup('Notebook', 'Notebook.png')">
+        <img src="../css/Imagens/Notebook.png" alt="Notebook">
+        <h2>Notebook</h2>
+        <button>Solicitar Empréstimo</button>
+      </div>
+      <div class="item-card" onclick="openPopup('Headset', 'Headset.png')">
+        <img src="../css/Imagens/Headset.png" alt="Headset">
+        <h2>Headset</h2>
+        <button>Solicitar Empréstimo</button>
+      </div>
+      <div class="item-card" onclick="openPopup('Monitor', 'Monitor.png')">
+        <img src="../css/Imagens/Monitor.png" alt="Monitor">
+        <h2>Monitor</h2>
+        <button>Solicitar Empréstimo</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Popup -->
+  <div class="popup-overlay" id="popup">
+    <div class="popup-content">
+      <p id="popup-text"></p>
+      <img id="popup-image" src="" alt="Produto" class="popup-image">
+      <button class="confirm-button" onclick="confirmRequest()">CONFIRMAR</button>
+    </div>
+  </div>
+
+  <script src="../JS/Emprestimo.js"></script>
+</body>
+</html>

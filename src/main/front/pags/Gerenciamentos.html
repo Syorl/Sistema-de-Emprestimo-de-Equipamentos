@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administração</title>
+  <link rel="stylesheet" href="../css/pags/Gerencimentos.css">
+</head>
+<body>
+  <div class="admin-panel">
+    <header>
+      <div class="user-info">
+        <img src=".." alt="User Icon">
+        <div>
+          <p>NOME:</p>
+          <p>ACESSO: <span class="access">ADMINISTRADOR</span></p>
+        </div>
+      </div>
+    </header>
+
+    <section class="product-section">
+      <div class="tabs">
+        <button>Descrição</button>
+        <button>Dimensões</button>
+        <button>Especificações</button>
+        <button>Avaliações</button>
+      </div>
+      <form id="product-form">
+        <input type="text" placeholder="nome do produto" required>
+        <input type="text" placeholder="categoria">
+        <input type="number" placeholder="preço">
+        <input type="number" placeholder="estoque">
+        <div class="form-actions">
+          <button type="submit" class="save-btn">Salvar</button>
+          <button type="button" class="cancel-btn">Cancelar</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="records-section">
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>CPF</th>
+            <th>Telefone</th>
+            <th>E-ma
+                il</th>
+            <th>Data Empréstimo</th>
+            <th>Excluir</th>
+          </tr>
+        </thead>
+        <tbody id="records-table">
+          <tr>
+            <td>Isabel</td>
+            <td>779.355.112-2</td>
+            <td>679025780</td>
+            <td>isabel@gmail.com</td>
+            <td>20/04/2025 — 20/05/2025</td>
+            <td><button class="edit-btn">Editar</button><button class="delete-btn">Excluir</button></td>
+          </tr>
+          <tr>
+            <td>Rafael</td>
+            <td>542.087.089-67</td>
+            <td>7790958992</td>
+            <td>rafael@teste.com</td>
+            <td>01/05/2025 — 01/06/2025</td>
+            <td><button class="edit-btn">Editar</button><button class="delete-btn">Excluir</button></td>
+          </tr>
+          <tr>
+            <td>Teste</td>
+            <td>888888888-88</td>
+            <td>86659</td>
+            <td>teste@resta.com</td>
+            <td>15/05/2025 — 15/06/2025</td>
+            <td><button class="edit-btn">Editar</button><button class="delete-btn">Excluir</button></td>
+          </tr>
+          <tr>
+            <td>Teste</td>
+            <td>123.456.789-00</td>
+            <td>9001239481</td>
+            <td>teste@example.com</td>
+            <td>28/05/2025 — 28/06/2025</td>
+            <td><button class="edit-btn">Editar</button><button class="delete-btn">Excluir</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer>
+      <p>Editor: Checker</p>
+      <button id="add-product-btn">ADICIONAR + PRODUTO</button>
+    </footer>
+  </div>
+
+  <script src="../JS/Gerenciamento.js"></script>
+</body>
+</html>

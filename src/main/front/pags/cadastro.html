@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta</title>
+    <link rel="stylesheet" href="../css/pags/Cadastro.css">
+</head>
+<body>
+    <div class="container">
+        <form id="form">
+            <div class="form-left"></div>
+            <div class="form-right">
+                <div class="input-group">
+                    <input type="text" placeholder="NOME" required>
+                    <input type="text" placeholder="CPF" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="SENHA" required>
+                    <input type="email" placeholder="ENDEREÇO DE E-MAIL" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="CONFIRAR SENHA" required>
+                    <input type="tel" placeholder="TELEFONE" required>
+                </div>
+                <button type="submit" class="btn-confirmar">CONFIRMAR</button>
+            </div>
+        </form>
+        <div class="popup" id="popup">
+            <p>Sua conta foi criada!</p>
+            <button onclick="fazerLogin()">FAZER LOGIN</button>
+        </div>
+    </div>
+
+    <script src="../JS/Cadastro.js"></script>
+</body>
+</html>

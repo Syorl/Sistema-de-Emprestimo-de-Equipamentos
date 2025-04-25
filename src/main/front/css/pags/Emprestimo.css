@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background: #f2f2f2;
+  }
+  
+  .profile-header {
+    background: linear-gradient(to bottom, #00362c, #007256);
+    padding: 20px;
+    text-align: center;
+    border-bottom-left-radius: 50% 10%;
+    border-bottom-right-radius: 50% 10%;
+    color: white;
+  }
+  
+  .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+  
+  .profile-info {
+    margin-top: 10px;
+  }
+  
+  .highlight {
+    color: #8fd0ff;
+  }
+  
+  .loan-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .item-list {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .item-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .item-card:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  .item-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: contain;
+  }
+  
+  .item-card h2 {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  .item-card button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .item-card button:hover {
+    background: #218838;
+  }
+  
+  /* Popup */
+  .popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    background: linear-gradient(to bottom right, #004d3b, #007256);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    width: 300px;
+  }
+  
+  .popup-image {
+    width: 150px;
+    margin: 20px 0;
+  }
+  
+  .confirm-button {
+    background: white;
+    color: #004d3b;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .confirm-button:hover {
+    background: #e0e0e0;
+  }
+  

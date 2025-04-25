@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .left {
+    background: linear-gradient(to bottom, #00362c, #007256);
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    clip-path: ellipse(75% 100% at 0% 50%);
+    padding-left: 80px;
+  }
+  
+  .login-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+  }
+  
+  .login-box input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .login-box input::placeholder {
+    color: white;
+    opacity: 0.8;
+  }
+  
+  .login-box button {
+    padding: 15px 30px;
+    width: 100%;
+    background: linear-gradient(to right, #ffffff, #aaaaaa);
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #00362c;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .login-box button:hover {
+    background: linear-gradient(to right, #e0e0e0, #888888);
+  }
+  
+  .login-box .cadastro {
+    margin-top: 10px;
+    font-size: 13px;
+    color: white;
+  }
+  
+  .login-box .cadastro a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .right {
+    flex: 1;
+    background: white;
+  }
+  
